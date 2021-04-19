@@ -1,4 +1,4 @@
 # number-convertion
 
-Convertion Number
+Convertion
 Decimal, Binary, Octal, Hexadecimal
