@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Konversi Angka</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Konversi Angka</h1>
+        <label for="decimal">Desimal</label>
+        <input type="number" onkeyup="calculate(this.value, 10, 'dec')" id="decimal" placeholder="Bilangan Desimal">
+
+        <label for="biner">Biner</label>
+        <input type="number" onkeyup="calculate(this.value, 2, 'bin')" id="biner" placeholder="Bilangan Biner">
+
+        <label for="oktal">Oktal</label>
+        <input type="number" onkeyup="calculate(this.value, 8, 'oct')" id="oktal" placeholder="Bilangan Oktal">
+
+        <label for="hexadecimal">Hexadesimal</label>
+        <input type="text" onkeyup="calculate(this.value, 16, 'hex')" id="hexadecimal"
+            placeholder="Bilangan Hexadesimal">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
