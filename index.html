@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
     </style>
-    <link rel="stylesheet" href="style.css">
+    <!-- local style -->
+    <link rel="stylesheet" href="assets/style.css">
     <title>Konversi Angka</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Konversi Angka</h1>
+        <h1>Konversi Angka Positif</h1>
         <label for="decimal">Desimal</label>
         <input type="number" onkeyup="calculate(this.value, 10, 'dec')" id="decimal" placeholder="Bilangan Desimal">
 
@@ -29,7 +32,20 @@
             placeholder="Bilangan Hexadesimal">
     </div>
 
-    <script src="script.js"></script>
+    <button class="open-button" onclick="openFeature()"><i class='bx bx-menu'></i></button>
+    <div class="feature-popup" id="feature">
+        <div class="feature">
+            <div class="flex">
+                <h1>Fitur </h1>
+                <i class='bx bx-x' onclick="closeFeature()"></i>
+            </div>
+
+            <a href="index.html">Perhitungan Positif</a>
+            <a href="negatif.html">Perhitungan Negatif</a>
+        </div>
+    </div>
+    <script src="assets/positif.js"></script>
+    <script src="assets/pop-up.js"></script>
 </body>
 
 </html>
